@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "855597525535",
+    "project_id": "ica14-691a0",
+    "storage_bucket": "ica14-691a0.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:855597525535:android:050a52f89e0f425998032a",
+        "android_client_info": {
+          "package_name": "com.example.ica14"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1H5pOaKHH5js07IRNHbop2lVRFj8V19U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
