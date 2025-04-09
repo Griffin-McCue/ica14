@@ -4,6 +4,11 @@ A new Flutter project.
 
 ## Getting Started
 
+I have closen these improvements:
+Add notification icons
+Implement notification actions/buttons
+Store notification history in the app
+
 This project is a starting point for a Flutter application.
 
 A few resources to get you started if this is your first Flutter project:
