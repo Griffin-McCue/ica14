@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
+import 'package:firebase_in_app_messaging/firebase_in_app_messaging.dart';
 import 'firebase_options.dart';
 
 Future<void> _firebaseMessagingBackgroundHandler(RemoteMessage message) async {
@@ -19,9 +20,9 @@ class MessagingApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Firebase Messaging',
+      title: 'Firebase Messaging + In-App',
       theme: ThemeData(primarySwatch: Colors.blue),
-      home: MessagingHomePage(title: 'Firebase Messaging'),
+      home: MessagingHomePage(title: 'Firebase Messaging + In-App'),
     );
   }
 }
@@ -43,6 +44,11 @@ class _MessagingHomePageState extends State<MessagingHomePage> {
   void initState() {
     super.initState();
     _initializeFirebaseMessaging();
+
+    // Enable In-App Messaging (optional)
+    FirebaseInAppMessaging.instance.setMessagesSuppressed(false);
+    // You can also trigger custom events defined in Firebase Console:
+    // FirebaseInAppMessaging.instance.triggerEvent("custom_event");
   }
 
   void _initializeFirebaseMessaging() async {
